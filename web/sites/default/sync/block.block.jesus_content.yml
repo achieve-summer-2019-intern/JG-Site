@@ -1,0 +1,22 @@
+uuid: f1de52cf-64f1-4ad8-9787-859da589d677
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - jesus
+_core:
+  default_config_hash: g49-4DhUBescrnECf-8F7dCpGRUdgdHI0fWYj8vnt_s
+id: jesus_content
+theme: jesus
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

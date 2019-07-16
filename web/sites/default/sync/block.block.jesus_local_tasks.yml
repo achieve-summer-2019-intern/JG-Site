@@ -1,0 +1,22 @@
+uuid: 1e51badc-9bbe-4dbf-bfd5-73199203ce31
+langcode: en
+status: false
+dependencies:
+  theme:
+    - jesus
+_core:
+  default_config_hash: wBmXgbX50U12zT5kzFYXAjifr9Srf61kXRLWuPnJYdQ
+id: jesus_local_tasks
+theme: jesus
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

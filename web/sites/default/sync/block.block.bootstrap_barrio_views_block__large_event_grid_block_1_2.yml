@@ -1,0 +1,30 @@
+uuid: 1c65941e-af23-485f-b304-d8327fdd0bfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.large_event_grid
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_views_block__large_event_grid_block_1_2
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:large_event_grid-block_1'
+settings:
+  id: 'views_block:large_event_grid-block_1'
+  label: 'Featured Events'
+  provider: views
+  label_display: visible
+  views_label: 'Featured Events'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/*/2*/*/*\r\n/*/*/2*/*/*"
+    negate: true
+    context_mapping: {  }

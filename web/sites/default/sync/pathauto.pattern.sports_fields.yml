@@ -1,0 +1,23 @@
+uuid: 7d48e1f8-26d6-4669-808c-c75ba95db0f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: sports_fields
+label: 'Sports Fields'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:parents:join-path]/[term:name]'
+selection_criteria:
+  4548a7ab-23b4-4c9f-9d0d-c03251cb245f:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      sport_categories: sport_categories
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 4548a7ab-23b4-4c9f-9d0d-c03251cb245f
+selection_logic: and
+weight: -5
+relationships: {  }

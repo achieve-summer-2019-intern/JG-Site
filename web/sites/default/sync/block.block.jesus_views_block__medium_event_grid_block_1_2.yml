@@ -1,0 +1,30 @@
+uuid: 47749f7d-9091-4120-bdd9-1c2d6996dfde
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.medium_event_grid
+  module:
+    - system
+    - views
+  theme:
+    - jesus
+id: jesus_views_block__medium_event_grid_block_1_2
+theme: jesus
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:medium_event_grid-block_1'
+settings:
+  id: 'views_block:medium_event_grid-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/*/2*/*/*\r\n/*/*/2*/*/*"
+    negate: true
+    context_mapping: {  }

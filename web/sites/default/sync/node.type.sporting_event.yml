@@ -1,0 +1,17 @@
+uuid: 18cbb4c9-0598-4f77-9968-a80367450aeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Sporting Event'
+type: sporting_event
+description: 'Hold all info about a sporting event'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

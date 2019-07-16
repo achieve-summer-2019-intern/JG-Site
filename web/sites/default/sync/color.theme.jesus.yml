@@ -1,0 +1,18 @@
+palette:
+  top: '#0e1961'
+  bottom: '#0e1961'
+  bg: '#545454'
+  sidebar: '#545454'
+  sidebarborders: '#ffffff'
+  footer: '#292929'
+  button: '#545454'
+  buttonhover: '#545454'
+  titleslogan: '#fffeff'
+  text: '#ffffff'
+  link: '#ffffff'
+logo: 'public://color/jesus-c1022572/logo.svg'
+stylesheets:
+  - 'public://color/jesus-c1022572/colors.css'
+files:
+  - 'public://color/jesus-c1022572/logo.svg'
+  - 'public://color/jesus-c1022572/colors.css'

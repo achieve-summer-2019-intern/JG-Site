@@ -1,0 +1,22 @@
+uuid: e217e26e-d92f-43d9-88b2-18caa97ff51d
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - jesus
+_core:
+  default_config_hash: RKg3870rjoj3s6S3wwAvsim78gxRdb7HMyAo2tbTh84
+id: jesus_search
+theme: jesus
+region: sidebar_second
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

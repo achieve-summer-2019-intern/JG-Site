@@ -1,0 +1,10 @@
+uuid: fecd8ca5-4ade-4865-a79a-c5915bd14a80
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.medium_grid_teaser
+label: 'Medium Grid Teaser'
+targetEntityType: node
+cache: true

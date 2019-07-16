@@ -1,0 +1,22 @@
+uuid: 891cae07-818c-409e-b631-b69143b09a29
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jesus
+_core:
+  default_config_hash: 8kg54uxqBFrAyIHQlGA9UWtpLaAeJaLbMIduXqvVpFY
+id: jesus_messages
+theme: jesus
+region: secondary_menu
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

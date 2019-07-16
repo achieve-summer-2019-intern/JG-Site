@@ -1,0 +1,22 @@
+uuid: ecfa724c-ab1d-4752-ac71-0e8c5497508f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - jesus
+_core:
+  default_config_hash: 1JG3TFmIRzhpR5lRMQIiIbi7jmWpPPtUuZLXu6OQMGM
+id: jesus_breadcrumbs
+theme: jesus
+region: content
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

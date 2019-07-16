@@ -1,0 +1,29 @@
+uuid: b84a38bf-3e54-49e5-af2c-ffa3c3009d02
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - jesus
+_core:
+  default_config_hash: seJxgYrod5V2hxdSLtE80ziqvhV-cSXMTHI8PPyCg2Y
+id: jesus_local_actions
+theme: jesus
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

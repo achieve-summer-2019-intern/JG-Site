@@ -1,0 +1,24 @@
+uuid: f19b45f0-cd13-4dab-b159-ae3ff152a20a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.medium_event_grid
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__medium_event_grid_block_1
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:medium_event_grid-block_1'
+settings:
+  id: 'views_block:medium_event_grid-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 295163b8-9732-4bc8-8773-56d502e3422e
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: RKg3870rjoj3s6S3wwAvsim78gxRdb7HMyAo2tbTh84
+id: bootstrap_barrio_search
+theme: bootstrap_barrio
+region: sidebar_second
+weight: -13
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

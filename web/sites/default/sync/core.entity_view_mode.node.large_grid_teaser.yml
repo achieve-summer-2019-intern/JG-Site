@@ -1,0 +1,10 @@
+uuid: 8dc12c23-75cb-486d-8766-c8c063dbb80f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.large_grid_teaser
+label: 'Large Grid Teaser'
+targetEntityType: node
+cache: true

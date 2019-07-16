@@ -1,0 +1,15 @@
+uuid: 62eb1b93-3bbc-40de-bb7f-d591780c5518
+langcode: en
+status: true
+dependencies: {  }
+name: medium_event_thumbnail
+label: 'Medium Event Thumbnail'
+effects:
+  4bada5eb-d7d3-4893-b8e3-c1ee57ca9062:
+    uuid: 4bada5eb-d7d3-4893-b8e3-c1ee57ca9062
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 305
+      height: 172
+      anchor: center-center

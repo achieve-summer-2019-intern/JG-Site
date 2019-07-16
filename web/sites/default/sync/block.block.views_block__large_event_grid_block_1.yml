@@ -1,0 +1,24 @@
+uuid: 488bf4f3-dee8-48e0-99fd-b35c6bd2475f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.large_event_grid
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__large_event_grid_block_1
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:large_event_grid-block_1'
+settings:
+  id: 'views_block:large_event_grid-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

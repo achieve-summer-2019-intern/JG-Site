@@ -1,0 +1,27 @@
+uuid: a6db136b-c698-4c37-90ee-9e18613ed058
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - jesus
+_core:
+  default_config_hash: BpDZVqKdL6gvIl9OLXqXTIPcBFEZj7_cmfcZHw_Htj0
+id: jesus_account_menu
+theme: jesus
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

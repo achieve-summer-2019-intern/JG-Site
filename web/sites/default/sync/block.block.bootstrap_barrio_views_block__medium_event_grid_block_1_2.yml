@@ -1,0 +1,30 @@
+uuid: d7d6978a-1c2b-40f0-a11d-996ab77776d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.medium_event_grid
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_views_block__medium_event_grid_block_1_2
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:medium_event_grid-block_1'
+settings:
+  id: 'views_block:medium_event_grid-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/*/2*/*/*\r\n/*/*/2*/*/*"
+    negate: true
+    context_mapping: {  }

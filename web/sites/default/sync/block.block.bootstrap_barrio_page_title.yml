@@ -1,0 +1,27 @@
+uuid: d3e03a38-cd48-4419-bd3a-399889a942b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: Bh4kCvvGVG_PS5xUxdT9K_FQluaKLAYoB84B049znTg
+id: bootstrap_barrio_page_title
+theme: bootstrap_barrio
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

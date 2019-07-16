@@ -1,0 +1,15 @@
+uuid: f35be567-d7ca-4173-bb64-15363f2e1ccd
+langcode: en
+status: true
+dependencies: {  }
+name: list_thumnail
+label: 'List Thumnail'
+effects:
+  025d0c90-a685-4b74-bb5a-6ce19b9331df:
+    uuid: 025d0c90-a685-4b74-bb5a-6ce19b9331df
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 70
+      anchor: center-center

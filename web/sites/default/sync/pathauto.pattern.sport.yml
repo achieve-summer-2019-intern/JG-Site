@@ -1,0 +1,22 @@
+uuid: b591fcad-176f-454a-a265-318f76d356e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sport
+label: 'Sports Content'
+type: 'canonical_entities:node'
+pattern: '/[node:field_sport_type:entity:root]/[node:field_sport_type]/[node:field_date:date:html_year]/[node:field_date:date:html_yearless_date]/[node:title]'
+selection_criteria:
+  722f39da-e94c-4a94-bef3-da5f19c9d54c:
+    id: node_type
+    bundles:
+      sporting_event: sporting_event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 722f39da-e94c-4a94-bef3-da5f19c9d54c
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,21 @@
+uuid: 1104823f-935b-4c9f-b97c-cd6d42fdbc9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sport_categories
+  module:
+    - text
+id: taxonomy_term.sport_categories.default
+targetEntityType: taxonomy_term
+bundle: sport_categories
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

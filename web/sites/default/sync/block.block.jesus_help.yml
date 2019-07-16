@@ -1,0 +1,22 @@
+uuid: 630eff93-cf2e-45b1-a94d-4887c8777727
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - jesus
+_core:
+  default_config_hash: 5gu5s2SyCxHGQ1C7-XFLcyyX4STq1tk5ccsh8epgq1s
+id: jesus_help
+theme: jesus
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: f5e571e0-ef83-48bb-9e68-0b1257763472
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_list
+  module:
+    - views
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_views_block__event_list_block_1
+theme: bootstrap_barrio
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:event_list-block_1'
+settings:
+  id: 'views_block:event_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

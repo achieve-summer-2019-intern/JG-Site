@@ -1,0 +1,21 @@
+uuid: 2efa6261-f3bf-4672-b06a-4c477c39c72e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.sporting_event
+  module:
+    - datetime
+id: node.sporting_event.field_date
+field_name: field_date
+entity_type: node
+bundle: sporting_event
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

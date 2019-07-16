@@ -1,0 +1,27 @@
+uuid: 43d951c7-aee5-419e-9e93-deb027de2d38
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - jesus
+_core:
+  default_config_hash: hV76BQtQlY3Ppx4zj67vFofBAbUIhbOqCYI6Ron3yco
+id: jesus_tools
+theme: jesus
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
