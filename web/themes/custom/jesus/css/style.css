@@ -3,3 +3,11 @@
  * Subtheme specific CSS.
  */
 
+ h2 {
+     margin: 0px
+ }
+
+ .sidebar {
+     position: absolute;
+     right: 0px
+ }
