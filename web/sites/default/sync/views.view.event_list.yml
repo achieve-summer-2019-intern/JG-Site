@@ -40,7 +40,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -61,16 +61,16 @@ display:
       style:
         type: html_list
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: true
-          uses_fields: false
           type: ul
-          wrapper_class: item-list
+          wrapper_class: ''
           class: list-group
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
@@ -529,6 +529,7 @@ display:
           entity_type: node
           plugin_id: taxonomy_index_tid_depth
       display_extenders: {  }
+      css_class: col-md-3
     cache_metadata:
       max-age: -1
       contexts:

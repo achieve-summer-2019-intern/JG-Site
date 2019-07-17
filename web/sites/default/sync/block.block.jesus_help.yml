@@ -11,7 +11,7 @@ _core:
 id: jesus_help
 theme: jesus
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: help_block
 settings:

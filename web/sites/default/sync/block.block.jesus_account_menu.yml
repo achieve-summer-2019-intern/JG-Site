@@ -13,7 +13,7 @@ _core:
 id: jesus_account_menu
 theme: jesus
 region: sidebar_second
-weight: -6
+weight: -5
 provider: null
 plugin: 'system_menu_block:account'
 settings:

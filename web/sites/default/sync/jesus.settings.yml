@@ -49,8 +49,8 @@ bootstrap_barrio_region_clean_featured_top: 0
 bootstrap_barrio_region_class_featured_top: row
 bootstrap_barrio_region_clean_breadcrumb: 1
 bootstrap_barrio_region_class_breadcrumb: ''
-bootstrap_barrio_region_clean_content: 0
-bootstrap_barrio_region_class_content: primary-grid
+bootstrap_barrio_region_clean_content: 1
+bootstrap_barrio_region_class_content: ''
 bootstrap_barrio_region_clean_sidebar_first: 1
 bootstrap_barrio_region_class_sidebar_first: ''
 bootstrap_barrio_region_clean_sidebar_second: 1
@@ -81,7 +81,7 @@ bootstrap_barrio_checkbox: standard
 bootstrap_barrio_select: standard
 bootstrap_barrio_file: standard
 bootstrap_barrio_navbar_top_affix: 0
-bootstrap_barrio_navbar_affix: 0
+bootstrap_barrio_navbar_affix: 1
 bootstrap_barrio_sidebar_first_affix: 0
 bootstrap_barrio_sidebar_second_affix: 0
 bootstrap_barrio_scroll_spy: ''

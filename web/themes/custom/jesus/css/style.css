@@ -3,7 +3,91 @@
  * Subtheme specific CSS.
  */
 
- h2 {
-     margin: 0px
- }
+#main {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
 
+.list-group {
+    list-style: none;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#grid-item-top {
+    position: relative;
+    max-height: 250px;
+}
+
+#grid-item-top > a {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+#grid-item-top > a > img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-attachment: fixed;
+    max-height: 250px;
+}
+
+#grid-item-top > div.title {
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+}
+
+#grid-item-top > div.date {
+    z-index: 2;
+}
+
+#grid-item-top > div.cat {
+    z-index: 2;
+}
+
+#grid-item-bottom {
+    position: relative;
+    max-height: 150px;
+}
+
+#grid-item-bottom > a {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+#grid-item-bottom > a > img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-attachment: fixed;
+    max-height: 150px;
+}
+
+#grid-item-bottom > div.title {
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+}
+
+#grid-item-bottom > div.date {
+    z-index: 2;
+}
+
+#grid-item-bottom > div.cat {
+    z-index: 2;
+}
