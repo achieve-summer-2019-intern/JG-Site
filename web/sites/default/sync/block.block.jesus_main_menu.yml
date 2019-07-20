@@ -13,7 +13,7 @@ _core:
 id: jesus_main_menu
 theme: jesus
 region: top_header
-weight: -9
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

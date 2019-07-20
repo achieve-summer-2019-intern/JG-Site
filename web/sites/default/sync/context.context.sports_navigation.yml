@@ -1,0 +1,27 @@
+uuid: 4d95c595-8d8e-4320-afe2-73b094f1cf1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+name: sports_navigation
+label: 'Sports Navigation'
+group: 'Sport Menu'
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      sport_categories: sport_categories
+    negate: 0
+    uuid: a7dfbd5c-1ff9-450f-9d1b-585bf8547c66
+    context_mapping: {  }
+reactions:
+  menu:
+    id: menu
+    menu:
+      - 'main:menu_link_content:ecbdad63-5139-4162-b9e4-a21073f7be15'
+    saved: false
+weight: 0

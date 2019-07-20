@@ -10,9 +10,9 @@ palette:
   titleslogan: '#fffeff'
   text: '#ffffff'
   link: '#ffffff'
-logo: 'public://color/jesus-4962c53d/logo.svg'
+logo: 'public://color/jesus-5752d9da/logo.svg'
 stylesheets:
-  - 'public://color/jesus-4962c53d/colors.css'
+  - 'public://color/jesus-5752d9da/colors.css'
 files:
-  - 'public://color/jesus-4962c53d/logo.svg'
-  - 'public://color/jesus-4962c53d/colors.css'
+  - 'public://color/jesus-5752d9da/logo.svg'
+  - 'public://color/jesus-5752d9da/colors.css'

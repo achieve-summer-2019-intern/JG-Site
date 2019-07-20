@@ -3,12 +3,6 @@
  * Subtheme specific CSS.
  */
 
-#main {
-    max-width: 100%;
-    display: block;
-    margin: auto;
-}
-
 .list-group {
     list-style: none;
     max-height: 500px;
@@ -16,78 +10,175 @@
     overflow-y: scroll;
 }
 
-#grid-item-top {
-    position: relative;
-    max-height: 250px;
+#header {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 2px 2px;
 }
 
-#grid-item-top > a {
-    position: absolute;
+#navbar-top {
+    display: grid;
+    grid-template-columns: 160px 500px;
+    grid-template-rows: 50px 15px;
     width: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover;
+    height: 50% !important;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+}
+
+#navbar-top > div.d-inline-block.align-top.site-name-slogan {
+    grid-row-start: 2;
+    font-size: 11px;
+}
+
+#navbar-top section{
+    position: absolute;
+    left: 10.7%;
+    width: 10%;
+    height: 50%;
+}
+
+#navbar-top > a > img {
+    max-width: 150px;
+    height: auto;
+}
+
+#navbar-main {
+    width: 100%;
+    height: 50% !important;
+    margin: 0; 
+    padding: 0;
+    box-shadow: 0 10px 5px #0000;
+}
+
+#superfish-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#superfish-main > li {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgba(0, 0, 0, 0.3) 0.5px;
+    background-color: #3e4980;
+    border-bottom: solid rgba(255, 255, 255, 0.1) 3px;
+    transition: ease-in-out 0.2s;
+}
+
+#page > div.featured-top > aside {
+    margin-top: 15px;
+    margin-left: 280px;
+}
+
+#block-jesus-views-block-large-event-grid-block-1-2 > h2 {
+    margin-left: 30px;
+}
+
+#main {
+    max-width: 75%;
+    display: block;
+    margin: auto;
+}
+
+#grid-item-top {
+    max-width: 500px;
+    margin: 10px 0;
+    background: rgb(40,40,40);
 }
 
 #grid-item-top > a > img {
-    position: absolute;
+    display: block;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-attachment: fixed;
-    max-height: 250px;
+    height: auto;
 }
 
-#grid-item-top > div.title {
-    z-index: 2;
-    position: absolute;
-    top: 20%;
-    left: 1%;
+#sport_header{
+    padding: 10px;
 }
 
-#grid-item-top > div.date {
-    z-index: 2;
-}
-
-#grid-item-top > div.cat {
-    z-index: 2;
+div.title {
+    font-size: 25px;
 }
 
 #grid-item-bottom {
-    position: relative;
-    max-height: 150px;
+    max-width: 300px;
+    margin: 10px 0;
+    background: rgb(40,40,40);
 }
 
-#grid-item-bottom > a {
-    position: absolute;
+#grid-item-bottom > a > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#list-item-right {
+    position: relative;
+    max-height: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 2;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+a.sf-depth-1 {
+    padding: 0;
+    text-align: center;
+    font-family: arial;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#list-item-right > a {
     width: 100%;
     top: 0;
     left: 0;
     background-size: cover;
 }
 
-#grid-item-bottom > a > img {
-    position: absolute;
+#list-item-right > a > img {
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
     background-attachment: fixed;
-    max-height: 150px;
+    max-height: 50px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+
 }
 
-#grid-item-bottom > div.title {
+#list-item-right > div.title {
     z-index: 2;
+    background: inherit;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 1%;
 }
 
-#grid-item-bottom > div.date {
+#list-item-right > div.date {
+    background: inherit;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
     z-index: 2;
 }
 
-#grid-item-bottom > div.cat {
+#list-item-right > div.cat {
+    background: inherit;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
     z-index: 2;
 }

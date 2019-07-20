@@ -10,8 +10,8 @@ dependencies:
     - jesus
 id: jesus_sportssections
 theme: jesus
-region: primary_menu
-weight: -8
+region: top_header
+weight: -7
 provider: null
 plugin: 'superfish:sports-sections'
 settings:
@@ -23,7 +23,7 @@ settings:
   depth: '0'
   expand_all_items: false
   menu_type: horizontal
-  style: default
+  style: none
   arrow: 0
   shadow: 0
   speed: fast

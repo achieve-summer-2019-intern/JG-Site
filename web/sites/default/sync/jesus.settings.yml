@@ -4,7 +4,7 @@ bootstrap_barrio_content_offset: 0
 bootstrap_barrio_sidebar_first_width: 4
 bootstrap_barrio_sidebar_first_offset: 0
 bootstrap_barrio_sidebar_second_width: 3
-bootstrap_barrio_sidebar_second_offset: 1
+bootstrap_barrio_sidebar_second_offset: 0
 bootstrap_barrio_fluid_container: 0
 bootstrap_barrio_button: 1
 bootstrap_barrio_button_size: ''
@@ -24,9 +24,12 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: true
+  use_default: false
+  path: 'public://logo--eversport--white.png'
 favicon:
-  use_default: true
+  use_default: false
+  path: 'public://EverSport Logo.png'
+  mimetype: image/png
 bootstrap_barrio_region_clean_top_header: 1
 bootstrap_barrio_region_class_top_header: row
 bootstrap_barrio_region_clean_top_header_form: 0
@@ -50,7 +53,7 @@ bootstrap_barrio_region_class_featured_top: row
 bootstrap_barrio_region_clean_breadcrumb: 1
 bootstrap_barrio_region_class_breadcrumb: ''
 bootstrap_barrio_region_clean_content: 1
-bootstrap_barrio_region_class_content: ''
+bootstrap_barrio_region_class_content: container
 bootstrap_barrio_region_clean_sidebar_first: 1
 bootstrap_barrio_region_class_sidebar_first: ''
 bootstrap_barrio_region_clean_sidebar_second: 1
@@ -81,11 +84,11 @@ bootstrap_barrio_checkbox: standard
 bootstrap_barrio_select: standard
 bootstrap_barrio_file: standard
 bootstrap_barrio_navbar_top_affix: 0
-bootstrap_barrio_navbar_affix: 1
+bootstrap_barrio_navbar_affix: 0
 bootstrap_barrio_sidebar_first_affix: 0
 bootstrap_barrio_sidebar_second_affix: 0
 bootstrap_barrio_scroll_spy: ''
-bootstrap_barrio_google_fonts: ''
+bootstrap_barrio_google_fonts: dosis_opensans
 bootstrap_barrio_icons: ''
 bootstrap_barrio_system_messages: ''
 bootstrap_barrio_table_style: ''

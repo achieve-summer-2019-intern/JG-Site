@@ -344,7 +344,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div id=\"grid-item-top\">\r\n{{ field_event_video }}\r\n<div class=\"cat\">{{ field_sport_type }}</div>\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"date\">{{ field_date }}</div>\r\n</div>"
+            text: "<div id=\"grid-item-top\">\r\n{{ field_event_video }}\r\n<div class=\"sport_header\">\r\n<div class=\"cat\">{{ field_sport_type }}</div>\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"date\">{{ field_date }}</div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -465,7 +465,7 @@ display:
           entity_type: node
           plugin_id: taxonomy_index_tid_depth
       display_extenders: {  }
-      css_class: 'col-md-12 row clearfix'
+      css_class: col-md-12
     cache_metadata:
       max-age: -1
       contexts:
