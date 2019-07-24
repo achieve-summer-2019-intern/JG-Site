@@ -1,0 +1,7 @@
+services:
+  intern_service.coffee:
+    class: Drupal\intern_service\CoffeeService
+
+  intern_service.cow:
+    class: Drupal\intern_service\CowService
+    arguments: ['@current_user']

@@ -6,6 +6,8 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  calendar: 0
+  calendar_datetime: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -19,6 +21,7 @@ module:
   dblog: 0
   devel: 0
   devel_generate: 0
+  devel_php: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -29,6 +32,9 @@ module:
   history: 0
   honeypot: 0
   image: 0
+  intern: 0
+  intern_service: 0
+  kint: 0
   link: 0
   media: 0
   media_library: 0
@@ -53,7 +59,9 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_templates: 0
   views_ui: 0
+  webprofiler: 0
   menu_link_content: 1
   pathauto: 1
   views: 10
