@@ -1,0 +1,26 @@
+uuid: 93243fb0-7b39-400b-a915-2c53f6b62e40
+langcode: en
+status: true
+dependencies:
+  module:
+    - intern
+    - system
+  theme:
+    - jesus
+id: internblock
+theme: jesus
+region: sidebar_first
+weight: 0
+provider: null
+plugin: intern_block
+settings:
+  id: intern_block
+  label: 'Intern Block'
+  provider: intern
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,8 @@
+view intern:
+  title: 'View intern module'
+  description: 'View and submit intern form'
+
+administer intern:
+  title: 'Administer Intern Settings'
+  description: 'Access the Intern settings page'
+  restrict access: true

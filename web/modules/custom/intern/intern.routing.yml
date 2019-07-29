@@ -20,4 +20,4 @@ intern.first_form:
     _form: '\Drupal\intern\Form\FirstForm'
     _title: 'Interns First Form'
   requirements:
-    _permission: 'access content'
+    _permission: 'view intern'
