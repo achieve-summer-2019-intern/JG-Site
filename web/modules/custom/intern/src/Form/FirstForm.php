@@ -9,6 +9,12 @@ class FirstForm extends FormBase {
     public function buildForm(array $form, FormStateInterface $form_state){
         #$node = \Drupal::routeMatch()->getParameter('node');
         #$nid = $node->nid->value;
+        $teams = [
+            'Lakers' => 'Lakers',
+            'Clippers' => 'Clippers',
+            'Raptors' => 'Raptors',
+        ];
+
         $form['first_name'] = [
             '#type' => 'textfield',
             '#title' => 'First Name',
@@ -21,14 +27,15 @@ class FirstForm extends FormBase {
             '#required' => TRUE,
         ];
 
+        $form['username'] = [
+            '#type' => 'textfield',
+            '#title' => 'Username',
+        ];
+
         $form['teams'] = [
             '#type' => 'select',
             '#title' => 'Favorite Team',
-            '#options' => [
-                '1' => 'Lakers',
-                '2' => 'Clippers',
-                '3' => 'Raptors',
-            ],
+            '#options' => $teams,
             '#required' => True,
         ];
 
@@ -37,14 +44,25 @@ class FirstForm extends FormBase {
         ];
 
         $form['actions']['generate'] = [
+            '#name' => 'gen_button',
             '#type' => 'button',
             '#value' => 'Make me a username!',
         ];
 
         $form['actions']['submit'] = [
+            '#name' => 'submit_button',
             '#type' => 'submit',
             '#value' => 'Submit',
         ];
+
+        $input = $form_state->getTriggeringElement();
+        $values = $form_state->getValues();
+        if (!empty($values) && $input['#name'] == 'gen_button'){
+            $first_name = $form_state->getValue('first_name');
+            $fave_team = $form_state->getValue('teams');
+            $result = $first_name . '4' . $fave_team;
+            $form['username']['#value'] = $result;
+        }
 
         return $form;
     }
@@ -54,19 +72,14 @@ class FirstForm extends FormBase {
     }
 
     public function submitForm(array &$form, FormStateInterface $form_state) {
-        $title = $form_state->getValue('first_name');
-        $input = $form_state->getUserInput();
-        drupal_set_message($input['_triggering_element_name']);
-        // $wufirst = $wutangNameGenerator();
-        // $wulast = $wutangNameGenerator();
-        // drupal_set_message('You submitted the form with title: '.$title);
+        $form_state->setRebuild();
     }
 
     public function validateForm(array &$form, FormStateInterface $form_state) {
-        // $title = $form_state->getValue('title');
-        // if(empty($title)) {
-        //     $form_state->setErrorByName('title', 'The title must exist.');
-        // }
+        $first_name = $form_state->getValue('first_name');
+        if(empty($first_name)) {
+            $form_state->setErrorByName('title', 'The title must exist.');
+        }
     }
 
     public function generateUsername(array &$form, FormStateInterface $form_state) {
