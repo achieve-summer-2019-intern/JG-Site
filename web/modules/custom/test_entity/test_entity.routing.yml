@@ -1,0 +1,58 @@
+# This file brings everything together. Very nifty!
+
+# Route name can be used in several places; e.g. links, redirects, and local
+# actions.
+entity.test_entity_contact.canonical:
+  path: '/test_entity_contact/{test_entity_contact}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'test_entity_contact'
+    _title: 'Contact Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'test_entity_contact.view'
+
+entity.test_entity_contact.collection:
+  path: '/test_entity_contact/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'test_entity_contact'
+    _title: 'Contact List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'administer contact entity'
+
+test_entity.contact_add:
+  path: '/test_entity_contact/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: test_entity_contact.add
+    _title: 'Add Contact'
+  requirements:
+    _entity_create_access: 'test_entity_contact'
+
+entity.test_entity_contact.edit_form:
+  path: '/test_entity_contact/{test_entity_contact}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: test_entity_contact.edit
+    _title: 'Edit Contact'
+  requirements:
+    _entity_access: 'test_entity_contact.edit'
+
+entity.test_entity_contact.delete_form:
+  path: '/contact/{test_entity_contact}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the contact entity.
+    _entity_form: test_entity_contact.delete
+    _title: 'Delete Contact'
+  requirements:
+    _entity_access: 'test_entity_contact.delete'
+
+test_entity.contact_settings:
+  path: 'admin/structure/test_entity_contact_settings'
+  defaults:
+    _form: '\Drupal\test_entity\Form\ContactSettingsForm'
+    _title: 'Contact Settings'
+  requirements:
+    _permission: 'administer contact entity'

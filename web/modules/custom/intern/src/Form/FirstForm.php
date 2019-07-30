@@ -57,13 +57,13 @@ class FirstForm extends FormBase {
 
         $input = $form_state->getTriggeringElement();
         $values = $form_state->getValues();
-        $our_service = \Drupal::service('intern_service.coffee');
+        $uname_service = \Drupal::service('intern_service.username');
 
         if (!empty($values) && $input['#name'] == 'gen_button'){
             $first_name = $form_state->getValue('first_name');
             $last_name = $form_state->getValue('last_name');
             $fave_team = $form_state->getValue('teams');
-            $result = $our_service->generateUsername($first_name, $last_name, $fave_team);
+            $result = $uname_service->generateUsername($first_name, $last_name, $fave_team);
             $form['username']['#value'] = $result;
         }
 

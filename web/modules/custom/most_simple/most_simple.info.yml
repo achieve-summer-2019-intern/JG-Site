@@ -1,0 +1,4 @@
+name: Most Simple Entity
+type: module
+description: A module that implements a simple entity
+core: 8.x

@@ -1,0 +1,11 @@
+# All action links for this module
+
+test_entity.contact_add:
+  # Which route will be called by the link
+  route_name: test_entity.contact_add
+  title: 'Add Contact'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.test_entity_contact.collection
+    - entity.test_entity_contact.canonical
