@@ -41,7 +41,6 @@ module:
   media_library: 0
   menu_ui: 0
   metatag: 0
-  most_simple: 0
   node: 0
   options: 0
   page_cache: 0
@@ -50,6 +49,7 @@ module:
   schema_metatag: 0
   search: 0
   shortcut: 0
+  simple: 0
   simple_sitemap: 0
   simple_sitemap_views: 0
   superfish: 0

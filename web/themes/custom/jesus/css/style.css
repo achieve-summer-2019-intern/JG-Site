@@ -72,6 +72,15 @@
     transition: ease-in-out 0.2s;
 }
 
+#superfish-main > li > ul {
+    background-color: #3e4980;
+    width: 100%;
+}
+
+#superfish-sports-sections > li > ul {
+    background-color: #3e4980;
+}
+
 #page > div.featured-top > aside {
     margin-top: 15px;
     margin-left: 280px;
